@@ -1,0 +1,27 @@
+{
+  "name": "Rustify-Lib",
+  "version": "0.1.0",
+  "description": "Rust-like utilities for embedded C++ (primitives, Result, ArrayString)",
+  "keywords": [
+    "rust",
+    "embedded",
+    "error-handling",
+    "utilities"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JamahaW/Rustify-Lib.git"
+  },
+  "authors": [
+    {
+      "name": "Maxim Naumov",
+      "email": "kiraflux@duck.com"
+    }
+  ],
+  "license": "MIT",
+  "frameworks": "*",
+  "platforms": "*",
+  "export": {
+    "include": "src/rs"
+  }
+}
