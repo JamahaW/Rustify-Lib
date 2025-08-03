@@ -44,5 +44,4 @@ auto msg = rs::formatted<32>("Status: %d", result.ok());
 ```
 
 ## Лицензия
-
-MIT (c) 2025 [Максим Наумов]
+MIT License - подробнее см. [LICENSE](LICENSE)
