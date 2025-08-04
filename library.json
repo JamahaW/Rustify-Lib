@@ -1,16 +1,11 @@
 {
   "name": "Rustify-Lib",
   "version": "1.0.0",
-  "description": "Rust-like utilities for embedded C++ (primitives, Result, Option, ArrayString)",
+  "description": "Rust-like utilities for embedded C++",
   "keywords": [
     "rust",
-    "optional",
     "error-handling",
-    "result-type",
-    "option-type",
-    "string-formatting",
-    "embedded",
-    "zero-allocation"
+    "embedded"
   ],
   "repository": {
     "type": "git",
