@@ -1,5 +1,5 @@
 {
-  "name": "Rustify-Lib",
+  "name": "Rustify",
   "version": "1.0.0",
   "description": "Rust-like utilities for embedded C++",
   "keywords": [
