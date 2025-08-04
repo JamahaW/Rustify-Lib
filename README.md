@@ -8,7 +8,7 @@ Rust-подобные утилиты для безопасного embedded C++
 
 - Обработка ошибок: `rs::Result<E>`
 
-- Форматирование строк: `rs::ArrayString<N>`
+- Форматирование строк: `rs::ArrayString<instructions_count>`
 
 - Header-only реализация, нулевые аллокации
 

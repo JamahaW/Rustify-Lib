@@ -1,27 +1,53 @@
 #pragma once
 
-#include "primitives.hpp"
-
-
 namespace rs {
 
-    /// Result тип на основе перечисления
-    template<typename E> struct Result {
+/// Результат операции
+template<typename T, typename E> struct Result {
 
-        /// значение
-        const E value;
+private:
 
-        /// Значение является успехом
-        constexpr bool ok() const noexcept {
-            return static_cast<int>(value) == 0;
-        }
+    bool is_ok;
 
-        /// Значение является ошибкой
-        constexpr bool fail() const noexcept {
-            return not ok();
-        }
+public:
 
-        Result() = delete;
+    union {
+        T value;
+        E error;
     };
-}
 
+    /// Успешный результат
+    Result(T val) :
+        is_ok{true}, value{val} {}
+
+
+    /// Результат с ошибкой
+    Result(E err) :
+        is_ok{false}, error{err} {}
+
+    /// Проверка на успех
+    bool ok() const { return is_ok; }
+
+    /// Проверка на ошибку
+    bool fail() const { return not is_ok; }
+};
+
+// Специализация для void
+template<typename E> struct Result<void, E> {
+    bool is_ok;
+    E error;
+
+    /// Успешный результат
+    Result() :
+        is_ok{true} {}
+
+    /// Результат с ошибкой
+    Result(E err) :
+        is_ok{false}, error{err} {}
+
+    bool ok() const { return is_ok; }
+
+    bool fail() const { return not is_ok; }
+};
+
+} // namespace rs
