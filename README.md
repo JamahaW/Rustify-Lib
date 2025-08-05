@@ -1,4 +1,4 @@
-# Rustify-Lib
+# Rustify
 
 Rust-подобные утилиты для безопасного embedded C++
 
@@ -18,7 +18,7 @@ Rust-подобные утилиты для безопасного embedded C++
 
 ```ini
 lib_deps =
-    https://github.com/JamahaW/Rustify-Lib.git
+    https://github.com/JamahaW/Rustify.git
 ```
 
 # Примеры использования
