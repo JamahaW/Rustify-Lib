@@ -18,7 +18,7 @@ Rust-подобные утилиты для безопасного embedded C++
 
 ```ini
 lib_deps =
-    https://github.com/JamahaW/Rustify.git
+    https://github.com/KiraFlux/Rustify.git
 ```
 
 # Примеры использования
