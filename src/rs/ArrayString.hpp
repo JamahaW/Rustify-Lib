@@ -2,7 +2,7 @@
 
 #include <array>
 #include <cstdarg>
-#include "rs/primitives.hpp"
+#include "rs/aliases.hpp"
 
 
 namespace rs {

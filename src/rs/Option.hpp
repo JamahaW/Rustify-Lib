@@ -13,7 +13,7 @@ public:
 
     T value;
 
-    /// Некоторые значение
+    /// Некоторое значение
     Option(T val) :
         is_some{true}, value{val} {}
 
